@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4050D5"
+    tools:context=".ui.admin.employee.EmployeeFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_resource"
+            android:layout_width="99dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="41dp"
+            android:src="@mipmap/resource_white"
+            app:layout_constraintEnd_toEndOf="@+id/text_employee"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_employee"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/contributors"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_resource" />
+
+        <TextView
+            android:id="@+id/text_view_desc"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/list_contributors_register"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_employee" />
+
+        <EditText
+            android:id="@+id/edit_text_employee"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/seach_employee"
+            android:hint="@string/search"
+            android:maxLines="1"
+            android:inputType="textFilter"
+            android:textColor="@color/colorText"
+            android:paddingLeft="37dp"
+            android:textCursorDrawable="@drawable/color_cusor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_desc" />
+
+        <ImageView
+            android:id="@+id/image_view_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_search_category_default"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_text_employee"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_employee"
+            app:layout_constraintTop_toTopOf="@+id/edit_text_employee" />
+    </android.support.constraint.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_employee"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        tools:listitem="@layout/card_adapter_employee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_employee"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_employee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_employee" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

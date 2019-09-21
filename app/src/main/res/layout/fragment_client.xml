@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLogin"
+    tools:context=".ui.admin.client.ClientFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_resource_client"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="37dp"
+            android:src="@mipmap/resource_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_title_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/client_and_project"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_resource_client" />
+
+        <TextView
+            android:id="@+id/text_view_sub_title_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="37dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/register_new_clients_projects"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title_client" />
+
+
+        <TextView
+            android:id="@+id/text_view_selecionar_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/select_client_to_see_the_projects"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_config_client"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_constraints_project" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_constraints_project"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_customized_client"
+            android:textColor="@color/colorWhite"
+            android:textColorLink="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_sub_title_client">
+
+            <TextView
+                android:id="@+id/text_view_add_client_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_add_black_24dp"
+                android:gravity="center"
+                android:text="@string/add_new_customer"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/image_view_config_client"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:src="@mipmap/ic_filter"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_selecionar_client"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_selecionar_client" />
+
+        <Button
+            android:id="@+id/button_save_client"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_white_client"
+            android:text="@string/save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorLogin"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_constraints_project"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <TextView
+            android:id="@+id/text_view_cancel_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorLogin"
+            android:text="@string/cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/button_save_client"
+            app:layout_constraintEnd_toStartOf="@+id/button_save_client"
+            app:layout_constraintTop_toTopOf="@+id/button_save_client" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_clients_client"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/card_adapter_client" />
+
+    <ProgressBar
+        android:id="@+id/progress_client"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/recycler_clients_client"
+        app:layout_constraintStart_toStartOf="@+id/recycler_clients_client"
+        app:layout_constraintTop_toTopOf="@+id/recycler_clients_client" />
+
+
+</android.support.constraint.ConstraintLayout>

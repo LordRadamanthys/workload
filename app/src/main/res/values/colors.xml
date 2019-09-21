@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4050D5</color>
+    <color name="colorPrimaryDark">#4050D5</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent">#8AFFFFFF</color>
+    <color name="colorLogin">#4050D5</color>
+    <color name="colorSwitch">#00CED9</color>
+    <color name="errorColor">#F44336</color>
+    <color name="colorText">#707070</color>
+    <color name="colorButtonNameEmployee">#303A97</color>
+    <color name="colorButtonBack">#FF6573E4</color>
+</resources>

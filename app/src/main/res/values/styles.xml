@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_corner</item>
+    </style>
+
+    <style name="CalendarTheme" parent="Theme.MaterialComponents.Light.Dialog" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSwitch</item>
+
+    </style>
+
+    <style name="StyledTilEditTextTheme">
+        <item name="colorControlNormal">#ffffff</item> // Cor padrão da linha
+        <item name="android:colorAccent" tools:targetApi="lollipop">#ffffff</item>
+        <item name="colorControlActivated">#00CED9</item> // Cor linha e texto quando recebe foco
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#ffffff</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#ffffff</item>
+    </style>
+
+    <style name="StyledLineEditTextTheme">
+        <item name="colorControlActivated">#00CED9</item> // Cor linha e texto quando recebe foco
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="StyledEditTextDialogCustomer">
+        <item name="colorControlNormal">@color/colorSwitch</item> // Cor padrão da linha
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorSwitch</item>
+        <item name="colorControlActivated">@color/colorSwitch</item> // Cor linha e texto quando recebe foco
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorSwitch</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/colorSwitch</item>
+    </style>
+
+    <style name="StyledTilEditTextThemeFalse">
+        <item name="colorControlNormal">#F44336</item> // Cor padrão da linha
+        <item name="android:colorAccent" tools:targetApi="lollipop">#ffffff</item>
+        <item name="colorControlActivated">#00CED9</item> // Cor linha e texto quando recebe foco
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#F44336</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#ffffff</item>
+    </style>
+
+
+    <style name="customTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorWhite</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:dividerPadding">3dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:divider">@android:color/black</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+    </style>
+
+</resources>

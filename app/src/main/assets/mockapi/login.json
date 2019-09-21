@@ -1,0 +1,10 @@
+{
+  "access_token": "DrdHZtH-ilLpZSpQVeKRRSTdn7AZCjW-ySgdmkwIUKOh4hvy1w65FQnVLN6mBG5JqTk96Gsf0ID3p3alRf4X67pn5fC3aMYJ8IBTnRFzk3EDsLaIbT2WlcIGFNl1xswOlWAxB5pDSG2EDZ_TDyaGBVxeNGWilCooUdX5nljBmZMYLeOETCIJmFsn-GmS5PXAutGEOFkChPE4XYQBFF1Vk_D00Hjc7DwLpQ2PRl91wZrJo-D-cjJQVCoVDTl3SZAa4tmQQgf3PFBj1j75y-tpVA",
+  "token_type": "bearer",
+  "expires_in": 31535999,
+  ".issued": "Fri, 10 May 2019 14:44:02 GMT",
+  ".expires": "Sat, 09 May 2020 14:44:02 GMT",
+  "id": "3",
+  "name": "Thales Falcini Raymundo",
+  "isAdmin": "true"
+}

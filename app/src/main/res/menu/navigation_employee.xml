@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/ic_pointing"
+        android:enabled="true"
+        android:icon="@mipmap/ic_lancamento"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/ic_history"
+        android:enabled="true"
+        android:icon="@mipmap/ic_historico"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/ic_config"
+        android:enabled="true"
+        android:icon="@mipmap/ic_config"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/ic_exit"
+        android:enabled="true"
+        android:icon="@mipmap/ic_sair"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+</menu>

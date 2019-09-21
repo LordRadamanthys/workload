@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_timeline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4050D5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view5">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_name_customer"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/round_name_customer"
+        android:enabled="false"
+        android:fontFamily="@font/open_sans"
+        android:minHeight="33dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/test"
+        android:textColor="@color/colorWhite"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_hours"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_hours"
+        android:enabled="false"
+        android:fontFamily="@font/open_sans_semibold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/hour_25_00"
+        android:textColor="@color/colorWhite"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_name_customer"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_delete_timeline"
+        app:layout_constraintStart_toEndOf="@+id/button_name_customer"
+        app:layout_constraintTop_toTopOf="@+id/button_name_customer" />
+
+    <ImageView
+        android:id="@+id/image_view_delete_timeline"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/button_hours"
+        app:layout_constraintEnd_toEndOf="@+id/textView_name_project"
+        app:layout_constraintTop_toTopOf="@+id/button_hours"
+        app:srcCompat="@mipmap/ic_delete" />
+
+    <TextView
+        android:id="@+id/textView_date_history"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/date_21_01"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/textView_name_project"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="start"
+        android:text="@string/alfaprev"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/button_name_customer" />
+
+    <TextView
+        android:id="@+id/textView_reason_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="start"
+        android:text="@string/text_varied"
+        android:textColor="@color/colorWhite"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_project"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="2dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <View
+        android:id="@+id/cardView4"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/roud_360"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_date_history"
+        app:layout_constraintStart_toEndOf="@+id/textView_date_history"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="158dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

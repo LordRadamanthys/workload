@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_point"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4050D5"
+            tools:context=".ui.home.point.PointFragment">
+
+
+            <ImageView
+                android:id="@+id/image_view_resource_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="37dp"
+                android:src="@mipmap/resource_white"
+                android:textAlignment="textStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_view_title_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="37dp"
+                android:text="@string/entry"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_resource_point" />
+
+            <TextView
+                android:id="@+id/text_view_subtitle_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="37dp"
+                android:text="@string/pointing_hours_project"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_title_point" />
+
+            <TextView
+                android:id="@+id/text_view_type_activity_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="37dp"
+                android:text="@string/customer"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_subtitle_project" />
+
+            <Spinner
+                android:id="@+id/spinner_type_activity_project"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:background="@drawable/spinner_custom"
+                android:focusableInTouchMode="false"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_type_activity_project" />
+
+            <ProgressBar
+                android:id="@+id/progress_customer_point"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_type_activity_project"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_type_activity_project"
+                app:layout_constraintStart_toStartOf="@+id/spinner_type_activity_project"
+                app:layout_constraintTop_toTopOf="@+id/spinner_type_activity_project" />
+
+            <TextView
+                android:id="@+id/text_view_project_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="37dp"
+                android:text="@string/project"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_type_activity_project" />
+
+            <Spinner
+                android:id="@+id/spinner_project_point"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:background="@drawable/spinner_custom"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_project_point" />
+
+            <ProgressBar
+                android:id="@+id/progress_project_point"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_project_point"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_project_point"
+                app:layout_constraintStart_toStartOf="@+id/spinner_project_point"
+                app:layout_constraintTop_toTopOf="@+id/spinner_project_point" />
+
+            <TextView
+                android:id="@+id/text_view_date_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/data"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/text_vew_invisible_point"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_project_point" />
+
+            <EditText
+                android:id="@+id/edit_text_date_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:backgroundTint="@color/colorWhite"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/StyledTilEditTextTheme"
+                app:layout_constraintEnd_toStartOf="@+id/text_vew_invisible_point"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_date_point" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_hour_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/text_vew_invisible_point"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_hour_point">
+
+                <EditText
+                    android:id="@+id/edit_text_hour_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="numberSigned"
+                    android:maxLength="1"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/StyledTilEditTextTheme"
+                    tools:layout_editor_absoluteY="11dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_hour_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="37dp"
+                android:text="@string/horas"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:theme="@style/StyledTilEditTextTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_vew_invisible_point"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_project_point" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_name_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="37dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_date_point">
+
+                <EditText
+                    android:id="@+id/edit_text_name_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:foregroundTint="@color/colorPrimary"
+                    android:gravity="start|top"
+                    android:hint="Motivo"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhiteTransparent"
+                    android:theme="@style/StyledLineEditTextTheme"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/button_project_confirm"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/button_custom_radius"
+                android:text="@string/add"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_layout_name_project" />
+
+            <ProgressBar
+                android:id="@+id/progress_add_point"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/button_project_confirm"
+                app:layout_constraintEnd_toEndOf="@+id/button_project_confirm"
+                app:layout_constraintStart_toStartOf="@+id/button_project_confirm"
+                app:layout_constraintTop_toTopOf="@+id/button_project_confirm" />
+
+            <TextView
+                android:id="@+id/text_vew_invisible_point"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_project_point" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+

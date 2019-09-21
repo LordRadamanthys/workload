@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Apontamentos</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Login</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="entry">Lançamento</string>
+    <string name="pointing_hours_project">Apontamento de horas em projeto</string>
+    <string name="customer">Cliente</string>
+    <string name="project">Projeto</string>
+    <string name="data">Data</string>
+    <string name="horas">Horas</string>
+    <string name="add">Adicionar</string>
+    <string name="contributors">Colaboradores</string>
+    <string name="list_contributors_register">Lista de colaboradores cadastrados.</string>
+    <string name="search">Pesquisar</string>
+    <string name="choose_one_day">Escolha o dia</string>
+    <string name="press_again_to_exit">Pressione novamente para sair</string>
+    <string name="success">Sucesso</string>
+    <string name="saved_login">login salvo</string>
+    <string name="login">Login</string>
+    <string name="press_the_fingerprint_reader">Pressione o leitor</string>
+    <string name="fill_the_fields">Preencha os campos</string>
+    <string name="fingerprint_authentication_permission_not_enable">Permissão de autenticação de impressão digital não ativada</string>
+    <string name="register_at_least_one_fingerprint_in_settings">Registre pelo menos uma impressão digital nas configurações</string>
+    <string name="lock_screen_security_not_enabled_in_settings">Segurança da tela de bloqueio não ativada nas configurações</string>
+    <string name="clear_preferences">Preferências limpas</string>
+    <string name="point_success">Apontamento feito com sucesso</string>
+    <string name="want_sign_out_of_your_account">Tem certeza que deseja sair da sua conta?</string>
+    <string name="check_your_connection">Verifique sua conexão</string>
+    <string name="activity">Activity</string>
+    <string name="rename">Renomear</string>
+    <string name="bank_alfa">Banco Alfa</string>
+    <string name="alfaprev">Alfaprev</string>
+    <string name="hour_25_00">25:00</string>
+    <string name="hour_40_00">40:00</string>
+    <string name="total_hours_posted">Total de horas lançadas</string>
+    <string name="hour_800_00">800:00</string>
+    <string name="date_21_01">21/01</string>
+    <string name="text_varied">Lorem ipsum dolor sit amet,consectetur adipiscing elit.In ac commodo tortor.</string>
+    <string name="test">teste</string>
+    <string name="new_customer_registration">Cadastro de novo cliente</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="register_project">Cadastro de projeto</string>
+    <string name="type_activity">Tipo de atividade</string>
+    <string name="demand_number">Numero de Demanda</string>
+    <string name="name">Nome</string>
+    <string name="client_and_project">Clientes e Projetos</string>
+    <string name="register_new_clients_projects">Cadastrar novos clientes e projetos.</string>
+    <string name="select_client_to_see_the_projects">Selecione um cliente para ver os projetos</string>
+    <string name="add_new_customer">Adicionar novo cliente</string>
+    <string name="jan">Jan</string>
+    <string name="year_2019">2019</string>
+    <string name="register_projects">Projetos cadastrados</string>
+    <string name="result">Resultado</string>
+    <string name="historic">Histórico</string>
+    <string name="settings">Configurações</string>
+    <string name="enable_or_disable_touch">Habilitar ou desabilitar Touch ID</string>
+    <string name="clear_saved_credentials">Limpar credenciais salvas</string>
+    <string name="notes_history">Histórico de Apontamentos</string>
+    <string name="edit">Editar</string>
+</resources>
